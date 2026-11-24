@@ -14,7 +14,7 @@
 | 항상 켜 두는 법 | tmux 세션 + 감독 스크립트 + 매일 정해진 시각 재시작 |
 | 정기 업무 | LaunchAgent가 하루 2번 보고(아침·저녁)와 백그라운드 감시를 실행 |
 | 안전 원칙 | 되돌리기 쉬운 일은 먼저 하고 나중에 보고, 되돌리기 어려운 일(발송·삭제·금전·권한)만 승인 |
-| 공개 범위 | 구조 설명 + 일반화한 교훈 7개. 설정·코드 원본·기억 파일은 제외 |
+| 공개 범위 | 구조 설명 + 일반화한 교훈 9개. 설정·코드 원본·기억 파일은 제외 |
 
 ## 문서
 - [구조](docs/architecture.md): 세션, 정기 작업, 승인, 기억이 어떻게 맞물리는가
@@ -32,6 +32,8 @@
 | [L-100](docs/lessons/L-100-dedupe-at-write-path-not-in-prompt.md) | 중복 등록 방지는 지시문이 아니라 쓰기 경로에 넣는다 |
 | [L-101](docs/lessons/L-101-approval-noise-is-workflow-not-allowlist.md) | 승인이 잦을 때 허용 목록 손질보다 역할 분리·정책 정합성이 먼저다 |
 | [L-102](docs/lessons/L-102-two-daily-reports-and-separate-watchers.md) | 정기 보고는 하루 2번으로 모으고 감시는 분리한다 |
+| [L-103](docs/lessons/L-103-ops-logs-outside-user-cleanup-scope.md) | 운영 로그·상태는 정리 앱이 건드리는 사용자 라이브러리 밖에 둔다 |
+| [L-104](docs/lessons/L-104-usage-limit-retry-and-fuzzy-output-gates.md) | 한도 실패는 기다려 재시도, 알림은 완료 기록으로, 모델 출력 판정은 느슨하게 |
 
 ## 라이선스
 이 문서는 [CC BY 4.0](LICENSE)입니다. 출처만 밝히면 자유롭게 공유·수정할 수 있습니다.
