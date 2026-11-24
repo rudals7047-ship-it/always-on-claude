@@ -28,7 +28,7 @@ This repo has two parts: (1) **general lessons for running AI agents unattended*
 
 > As official features improve, swap in them for the hand-built runtime (supervisor, scheduler, remote access). What remains is the rulebook for **what to delegate, when to ask, and how to run it so you can trust it**.
 
-## Eleven lessons in one line each
+## Lessons in one line each
 | ID | Lesson |
 |---|---|
 | L-083 *(macOS)* | Scripts started by the scheduler (launchd) lack macOS privacy permissions → re-run them inside a permitted process (e.g. tmux) |
