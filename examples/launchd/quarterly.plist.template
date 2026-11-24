@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 분기 첫날 09:00 실행 템플릿(로그 압축 등). 맥이 꺼져 있었다면 켜질 때 실행된다. -->
+<plist version="1.0"><dict>
+<key>Label</key><string>local.assistant.rotate-logs</string>
+<key>ProgramArguments</key><array><string>/bin/zsh</string><string>/Users/__USER__/assistant/scripts/rotate-logs.sh</string></array>
+<key>StartCalendarInterval</key><array>
+<dict><key>Month</key><integer>1</integer><key>Day</key><integer>1</integer><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer></dict>
+<dict><key>Month</key><integer>4</integer><key>Day</key><integer>1</integer><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer></dict>
+<dict><key>Month</key><integer>7</integer><key>Day</key><integer>1</integer><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer></dict>
+<dict><key>Month</key><integer>10</integer><key>Day</key><integer>1</integer><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer></dict>
+</array>
+<key>EnvironmentVariables</key><dict><key>HOME</key><string>/Users/__USER__</string><key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string></dict>
+<key>StandardOutPath</key><string>/Users/__USER__/assistant/state/logs/rotate.out.log</string>
+<key>StandardErrorPath</key><string>/Users/__USER__/assistant/state/logs/rotate.err.log</string>
+</dict></plist>

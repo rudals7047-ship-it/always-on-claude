@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 하루 한 번 실행 템플릿. __USER__ 를 자신의 계정명으로, 시각을 원하는 값으로 바꾼다.
+     설치: cp 후 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/<파일>.plist
+     로그는 ~/Library/Logs 가 아니라 프로젝트 소유 폴더에 둔다(L-103). -->
+<plist version="1.0"><dict>
+<key>Label</key><string>local.assistant.morning</string>
+<key>ProgramArguments</key><array><string>/bin/zsh</string><string>/Users/__USER__/assistant/scripts/run-daily.sh</string><string>morning</string></array>
+<key>StartCalendarInterval</key><dict><key>Hour</key><integer>7</integer><key>Minute</key><integer>0</integer></dict>
+<key>EnvironmentVariables</key><dict><key>HOME</key><string>/Users/__USER__</string><key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string></dict>
+<key>StandardOutPath</key><string>/Users/__USER__/assistant/state/logs/morning.out.log</string>
+<key>StandardErrorPath</key><string>/Users/__USER__/assistant/state/logs/morning.err.log</string>
+</dict></plist>
