@@ -1,6 +1,6 @@
 # Always-on Claude
 
-**Automate local apps on your own machine, with your own Claude — and the lessons for keeping any AI agent running over time, from real trial and error.**
+**Automate local apps on your own machine, with your own Claude, and control it from anywhere through a messenger app like Telegram — plus the lessons for keeping any AI agent running over time, from real trial and error.**
 
 This repo has two parts: (1) **general lessons for running AI agents unattended** (they apply regardless of model or OS) and (2) one **worked example**: a personal assistant built on Claude Code that runs on an always-on Mac: you message it from your phone, it acts on the Mac (calendar, reminders, mail, messages, files, web), and replies in the same chat. It contains **design notes, lessons learned, generalized example code and templates**. It does *not* contain the operator's private memory files, permission/policy originals, or personal configuration. (Written in Korean; this page is a short English guide.)
 
