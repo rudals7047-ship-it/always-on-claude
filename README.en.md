@@ -17,6 +17,17 @@ This repo has two parts: (1) **general lessons for running AI agents unattended*
 | Architecture / principles | [`docs/architecture.md`](docs/architecture.md), [`docs/design-principles.md`](docs/design-principles.md) |
 | Known gaps | [`docs/limitations.md`](docs/limitations.md) |
 
+## Why this still matters (even with official remote-control and computer-use features)
+| Angle | Point |
+|---|---|
+| A system, not a part | Remote access is a doorway; screen control is a pair of hands. Both act only when asked. This setup reports on schedule, spots what you missed, retries on failure and reports its own breakage, unprompted. |
+| Screenless first | Screen control is slow and interrupts you. Prefer databases, scripts and connectors; keep the screen as a last resort. That is what makes daily unattended runs stable. |
+| Safety and trust by design | What to do first vs. ask about, what to block on unattended runs, how to prevent duplicates and false "done" reports — tools don't decide that for you. The lessons here are that design. |
+| Your own judgment rules | Rules tuned to your schedule, memory and preferences can't come from a generic feature, and they compound over time. |
+| A map for builders | As tools get easier, more people will build their own and hit the same problems recorded here. |
+
+> As official features improve, swap in them for the hand-built runtime (supervisor, scheduler, remote access). What remains is the rulebook for **what to delegate, when to ask, and how to run it so you can trust it**.
+
 ## Ten lessons in one line each
 | ID | Lesson |
 |---|---|
