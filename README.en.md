@@ -16,7 +16,7 @@ This repo documents a personal assistant built on Claude Code that runs on an al
 | Architecture / principles | [`docs/architecture.md`](docs/architecture.md), [`docs/design-principles.md`](docs/design-principles.md) |
 | Known gaps | [`docs/limitations.md`](docs/limitations.md) |
 
-## Nine lessons in one line each
+## Ten lessons in one line each
 | ID | Lesson |
 |---|---|
 | L-083 | Scripts started by the scheduler (launchd) lack macOS privacy permissions → re-run them inside a permitted process (e.g. tmux) |
@@ -27,6 +27,7 @@ This repo documents a personal assistant built on Claude Code that runs on an al
 | L-101 | Approval fatigue is a workflow/policy problem before it is an allow-list problem |
 | L-102 | Consolidate reports to two a day; keep watchers separate |
 | L-103 | Keep operational logs outside the user library — a cleaner app can wipe them |
+| L-105 | Narrow the tool list on unattended runs (no send/delete/web); keep approvals for human-attended sessions |
 | L-104 | Wait and retry on usage limits; judge health by "completion records", not stale exit codes; make sentinel-output checks tolerant |
 
 ## Design in four sentences

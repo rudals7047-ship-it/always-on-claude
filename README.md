@@ -14,7 +14,7 @@
 | 항상 켜 두는 법 | tmux 세션 + 감독 스크립트 + 매일 정해진 시각 재시작 |
 | 정기 업무 | LaunchAgent가 하루 2번 보고(아침·저녁)와 백그라운드 감시를 실행 |
 | 안전 원칙 | 되돌리기 쉬운 일은 먼저 하고 나중에 보고, 되돌리기 어려운 일(발송·삭제·금전·권한)만 승인 |
-| 공개 범위 | 구조 설명 + 일반화한 교훈 9개 + **일반화한 예제 코드·템플릿**. 정책 원문·권한 설정 원본·기억 파일은 제외 |
+| 공개 범위 | 구조 설명 + 일반화한 교훈 10개 + **일반화한 예제 코드·템플릿**. 정책 원문·권한 설정 원본·기억 파일은 제외 |
 | 처음 시작 | [따라 만들기](docs/build-your-own.md) → [예제](examples/) · [템플릿](templates/) |
 | 망가졌을 때 | [복구 가이드](docs/recovery.md) |
 
@@ -39,6 +39,7 @@
 | [L-102](docs/lessons/L-102-two-daily-reports-and-separate-watchers.md) | 정기 보고는 하루 2번으로 모으고 감시는 분리한다 |
 | [L-103](docs/lessons/L-103-ops-logs-outside-user-cleanup-scope.md) | 운영 로그·상태는 정리 앱이 건드리는 사용자 라이브러리 밖에 둔다 |
 | [L-104](docs/lessons/L-104-usage-limit-retry-and-fuzzy-output-gates.md) | 한도 실패는 기다려 재시도, 알림은 완료 기록으로, 모델 출력 판정은 느슨하게 |
+| [L-105](docs/lessons/L-105-narrow-tools-on-unattended-paths.md) | 무인 실행은 도구를 좁히고, 사람이 있는 경로는 승인으로 |
 
 ## 라이선스
 이 문서는 [CC BY 4.0](LICENSE)입니다. 출처만 밝히면 자유롭게 공유·수정할 수 있습니다.
