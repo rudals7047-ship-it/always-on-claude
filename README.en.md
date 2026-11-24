@@ -9,6 +9,7 @@ This repo has two parts: (1) **general lessons for running AI agents unattended*
 ## Start here
 | Goal | Where |
 |---|---|
+| Share page (with preview card) | https://always-on-claude.vercel.app |
 | Build a minimal version step by step | [`docs/build-your-own.md`](docs/build-your-own.md) |
 | Reusable code (supervisor, scheduler with usage-limit retry, write guard, health check, log rotation, backup) | [`examples/`](examples/) |
 | Rules/skill templates | [`templates/`](templates/) |
