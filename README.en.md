@@ -1,8 +1,8 @@
 # Always-on Claude
 
-**A 24/7 personal AI assistant you talk to from your phone (Telegram) — and the things that broke while building it.**
+**Automate local apps on your own machine, with your own Claude — and the lessons for keeping any AI agent running over time, from real trial and error.**
 
-This repo documents a personal assistant built on Claude Code that runs on an always-on Mac: you message it from your phone, it acts on the Mac (calendar, reminders, mail, messages, files, web), and replies in the same chat. It contains **design notes, lessons learned, generalized example code and templates**. It does *not* contain the operator's private memory files, permission/policy originals, or personal configuration. (Written in Korean; this page is a short English guide.)
+This repo has two parts: (1) **general lessons for running AI agents unattended** (they apply regardless of model or OS) and (2) one **worked example**: a personal assistant built on Claude Code that runs on an always-on Mac: you message it from your phone, it acts on the Mac (calendar, reminders, mail, messages, files, web), and replies in the same chat. It contains **design notes, lessons learned, generalized example code and templates**. It does *not* contain the operator's private memory files, permission/policy originals, or personal configuration. (Written in Korean; this page is a short English guide.)
 
 > ⚠️ **Disclaimer**: Personal-use record, no warranty. Automating messengers/mail may violate terms of service or trigger account restrictions (especially unofficial methods), and handling other people's conversations carries legal/ethical responsibility. No real personal data, configs or keys are included.
 
@@ -19,10 +19,10 @@ This repo documents a personal assistant built on Claude Code that runs on an al
 ## Ten lessons in one line each
 | ID | Lesson |
 |---|---|
-| L-083 | Scripts started by the scheduler (launchd) lack macOS privacy permissions → re-run them inside a permitted process (e.g. tmux) |
+| L-083 *(macOS)* | Scripts started by the scheduler (launchd) lack macOS privacy permissions → re-run them inside a permitted process (e.g. tmux) |
 | L-084 | Unattended LLM workers can pick the wrong folder and report "done" → force path/count verification |
-| L-085 | Bot approval buttons can't receive callbacks when another process owns polling → use a reply keyboard |
-| L-098 | Before adding third-party UI automation: audit source, define side effects (read receipts), grant permissions to a minimal binary only |
+| L-085 *(Telegram)* | Bot approval buttons can't receive callbacks when another process owns polling → use a reply keyboard |
+| L-098 *(macOS)* | Before adding third-party UI automation: audit source, define side effects (read receipts), grant permissions to a minimal binary only |
 | L-100 | Prevent duplicates in the *write path*, not in the prompt |
 | L-101 | Approval fatigue is a workflow/policy problem before it is an allow-list problem |
 | L-102 | Consolidate reports to two a day; keep watchers separate |
@@ -38,3 +38,5 @@ This repo documents a personal assistant built on Claude Code that runs on an al
 
 ## License
 [CC BY 4.0](LICENSE) — share and adapt with attribution.
+
+> Not tested on other OSes/models; treat the general lessons as transferable principles and the example code as a starting point to port.
