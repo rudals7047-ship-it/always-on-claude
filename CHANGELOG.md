@@ -1,0 +1,1 @@
+- 2026-11-25: 공유 썸네일·페이지 확정본 배포(내 Mac 창+폰 알림/확인 그림, og.png v=532878c9). 공개 README(한/영)·저장소 설명 갱신. 시안 소스 share-card/og-art.mjs, variants.mjs.

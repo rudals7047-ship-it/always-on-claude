@@ -55,6 +55,7 @@
 | [L-104](docs/lessons/L-104-usage-limit-retry-and-fuzzy-output-gates.md) | 범용 | 한도 실패는 기다려 재시도, 알림은 완료 기록으로, 모델 출력 판정은 느슨하게 |
 | [L-105](docs/lessons/L-105-narrow-tools-on-unattended-paths.md) | 범용 | 무인 실행은 도구를 좁히고, 사람이 있는 경로는 승인으로 |
 | [L-106](docs/lessons/L-106-link-preview-title-length-and-cache-key.md) | 범용 | 링크 미리보기 제목은 짧게, 캐시는 주소 단위라 고친 뒤엔 주소를 바꿔 보낸다 |
+| [L-107](docs/lessons/L-107-ui-automation-needs-window-state.md) | 환경 특화(macOS) | 화면(접근성) 기반 읽기는 앱 창이 열려 있어야 하고, 모호한 오류는 원인 문장으로 번역한다 |
 
 ## 라이선스
 이 문서는 [CC BY 4.0](LICENSE)입니다. 출처만 밝히면 자유롭게 공유·수정할 수 있습니다.

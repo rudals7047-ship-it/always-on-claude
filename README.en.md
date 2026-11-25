@@ -41,6 +41,7 @@ This repo has two parts: (1) **general lessons for running AI agents unattended*
 | L-103 | Keep operational logs outside the user library — a cleaner app can wipe them |
 | L-105 | Narrow the tool list on unattended runs (no send/delete/web); keep approvals for human-attended sessions |
 | L-106 | Keep link-preview titles short; previews are cached per URL string, so resend with a changed URL after fixing |
+| L-107 | UI (accessibility) based reading needs the app window open; translate vague errors into a cause plus the action the user should take (macOS-specific) |
 | L-104 | Wait and retry on usage limits; judge health by "completion records", not stale exit codes; make sentinel-output checks tolerant |
 
 ## Design in four sentences
