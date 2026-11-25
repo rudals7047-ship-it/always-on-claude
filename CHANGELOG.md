@@ -1,2 +1,3 @@
 - 2026-11-25: 공유 썸네일·페이지 확정본 배포(내 Mac 창+폰 알림/확인 그림, og.png v=532878c9). 공개 README(한/영)·저장소 설명 갱신. 시안 소스 share-card/og-art.mjs, variants.mjs.
 - 2026-11-26: 날씨(아침·저녁 카드의 7일 예보, 조회 실패 시 표시)를 README(한/영)·구조·따라 만들기와 공유 페이지·썸네일(날씨 아이콘)에 반영.
+- 2026-11-26 공유 사이트 재배포(날씨 반영, dpl_F1552BXUjU7o5Uq8QNj7RiPzdAao). 썸네일은 Vercel 도구가 큰 이진 파일을 직접 못 받아 공개 저장소 share/og.png로 호스팅하고 og:image가 그 주소(raw.githubusercontent.com, v=abbf3a09)를 가리킴(build.mjs OG_BASE). Vercel 프로젝트 설정: 설치·빌드 명령 'echo skip', 출력 폴더 '.'. 사이트의 /og.png는 이제 없음. 카톡 썸네일 캐시는 갱신 지연 가능 [추정].
