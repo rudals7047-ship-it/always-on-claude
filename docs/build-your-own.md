@@ -18,7 +18,7 @@
 | 3. 상시 세션 | [`supervisor.sh`](../examples/supervisor.sh)를 launchd KeepAlive로 실행, 매일 새벽 재시작 | 세션을 죽였을 때 5초 안에 되살아난다 | 구조 |
 | 4. 요청→실행→회신 | 메신저로 요청하면 **회신 도구**로 답하게 한다(터미널 출력은 사용자에게 안 보임) | 폰에서 질문 → 폰으로 답 | |
 | 5. 쓰기 안전장치 | 일정·알림을 만드는 스크립트는 [`write-guard.sh`](../examples/write-guard.sh)처럼 중복 검사를 **쓰기 경로**에 넣는다 | 같은 항목을 두 번 시켜도 한 번만 만들어진다 | L-100 |
-| 6. 정기 보고 | [`run-daily.sh`](../examples/run-daily.sh) + [launchd 템플릿](../examples/launchd)으로 아침·저녁 2번만 | 지정 시각에 보고가 온다. 한도 걸린 날도 재시도로 도착한다 | L-102, L-104 |
+| 6. 정기 보고 | [`run-daily.sh`](../examples/run-daily.sh) + [launchd 템플릿](../examples/launchd)으로 아침·저녁 2번만 | 지정 시각에 보고가 온다(일정·마감·날씨 등). 한도 걸린 날도 재시도로 도착한다 | L-102, L-104 |
 | 7. 자기 점검 | [`health-check.sh`](../examples/health-check.sh)를 **다른 스케줄러**로 30분마다. 완료 기록으로 판단 | 작업을 일부러 막으면 알림이 오고 복구되면 "복구됨"이 온다 | L-104 |
 | 8. 로그·백업 | 로그는 프로젝트 폴더(`state/logs`)에, [`rotate-logs.sh`](../examples/rotate-logs.sh)와 [`backup.sh`](../examples/backup.sh)를 스케줄 | 로그가 정리 앱·시스템 정리에 안 지워진다. 백업 폴더에 날짜별 사본이 생긴다 | L-103 |
 | 9. 권한은 마지막에 | 앱 제어·메시지 읽기 같은 넓은 권한은 필요할 때 **전용 실행 파일에만**(셸·터미널 X) | 해당 기능만 동작하고 다른 곳은 막혀 있다 | L-098 |
