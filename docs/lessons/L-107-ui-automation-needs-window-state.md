@@ -4,7 +4,7 @@ title: 화면(접근성) 기반 읽기는 앱 창 상태에 의존하므로, 오
 type: pitfall
 tags: [ops, macos, automation]
 confidence: 확인
-reuse: medium
+reuse: med
 date: 2026-11-25
 ---
 
